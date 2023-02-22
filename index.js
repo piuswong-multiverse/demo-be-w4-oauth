@@ -7,7 +7,7 @@ const morgan = require('morgan');
 
 //  middleware
 app.use(express.json());  // can read JSON in req.body
-app.use(express.urlencoded({extended:true})) // can red url-encoded data in req.body
+app.use(express.urlencoded({extended:true})) // can read url-encoded data in req.body
 app.use(cors()); // enable CORS
 app.use(morgan('dev')); // log requests to console
 
